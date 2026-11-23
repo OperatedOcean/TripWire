@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Player Pong</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game">
+      <div class="scores" aria-label="Score">
+        <span id="leftScore">0</span>
+        <span class="winner" id="message">First to 7</span>
+        <span id="rightScore">0</span>
+      </div>
+
+      <canvas id="gameCanvas" width="960" height="540" aria-label="Pong game"></canvas>
+
+      <div class="controls">
+        <div><strong>Left:</strong> W / S</div>
+        <button id="startButton" type="button">Start</button>
+        <div><strong>Right:</strong> ↑ / ↓</div>
+      </div>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
